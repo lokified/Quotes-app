@@ -15,7 +15,7 @@ export class QuoteDetailsComponent implements OnInit {
   faUp = faThumbsUp;
   
   up = 0;
-  upVote () {   
+  upVote () {
     this.up++;
   }
 

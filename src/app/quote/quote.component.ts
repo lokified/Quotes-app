@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Quote } from '../quote';
 
 @Component({
@@ -16,13 +17,12 @@ export class QuoteComponent implements OnInit {
  showQuoteDetails ( index : any) {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
+
+  faDelete = faTrashAlt;
   deleteQuote (confirmIt: any, index : any) : any{
     if(confirmIt){
       confirm('Are you sure you want to delete this quote?');
       this.quotes.splice(index,1);
-    }
-    else{
-      return true;
     }
     
   }
