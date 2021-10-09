@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Quote } from '../quote';
+import {  faThumbsDown, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-quote-details',
@@ -9,6 +10,10 @@ import { Quote } from '../quote';
 export class QuoteDetailsComponent implements OnInit {
 
   @Input() quote! : Quote;
+
+  faDown = faThumbsDown;
+  faUp = faThumbsUp;
+
   constructor() { }
 
   ngOnInit(): void {
