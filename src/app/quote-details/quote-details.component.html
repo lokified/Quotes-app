@@ -3,9 +3,9 @@
 </footer>
 <div>
     
-    <fa-icon [icon]="faDown"></fa-icon>
-    <span class="text-danger">  </span>
-    <fa-icon  [icon]="faUp"></fa-icon>
-    <span class="text-success"> </span>
+    <fa-icon (click) = 'downVote ()' [icon]="faDown"></fa-icon>
+    <span class="text-danger"> {{down}} </span>
+    <fa-icon (click) = 'upVote ()' [icon]="faUp"></fa-icon>
+    <span class="text-success"> {{up}} </span>
 
 </div>

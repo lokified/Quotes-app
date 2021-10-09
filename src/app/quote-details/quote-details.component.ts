@@ -13,7 +13,16 @@ export class QuoteDetailsComponent implements OnInit {
 
   faDown = faThumbsDown;
   faUp = faThumbsUp;
+  
+  up = 0;
+  upVote () {   
+    this.up++;
+  }
 
+  down =0
+  downVote () {
+     this.down++;
+  }
   constructor() { }
 
   ngOnInit(): void {
