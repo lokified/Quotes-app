@@ -14,8 +14,18 @@ export class QuoteComponent implements OnInit {
  ];
 
  showQuoteDetails ( index : any) {
-  this.quotes[index].showDetails = !this.quotes[index].showDetails;
-}
+    this.quotes[index].showDetails = !this.quotes[index].showDetails;
+  }
+  deleteQuote (confirmIt: any, index : any) : any{
+    if(confirmIt){
+      confirm('Are you sure you want to delete this quote?');
+      this.quotes.splice(index,1);
+    }
+    else{
+      return true;
+    }
+    
+  }
 
   constructor() { }
 

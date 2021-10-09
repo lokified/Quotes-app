@@ -19,7 +19,7 @@ export class QuoteDetailsComponent implements OnInit {
     this.up++;
   }
 
-  down =0
+  down =0;
   downVote () {
      this.down++;
   }

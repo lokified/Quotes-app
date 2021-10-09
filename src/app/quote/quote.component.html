@@ -14,8 +14,12 @@
                             <app-quote-details [quote] = 'quote' ></app-quote-details>
                         </div>
                     </blockquote>
+                    <div class="card-footer">
+                        <button (click) = 'deleteQuote($event,i)' class="btn btn-danger btn-sm delete">Delete-quote</button>
+                    </div> 
                 </div>
             </div>
+            <p class="alert alert-danger" *ngIf = 'quotes.length <1'>No quote available</p>
         </div>
     </div>
 </div>
