@@ -1,1 +1,17 @@
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+            <div *ngFor = 'let quote of quotes; let i = index'  class="card mt-5">
+                <div class="card-header">
+                    <h3> {{quote.yourName}} </h3>
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>{{quote.yourQuote}}</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
