@@ -13,6 +13,10 @@ export class QuoteComponent implements OnInit {
     new Quote('Elon Musk','The first step is to establish that something is possible; then the probability will occur','Tesla'),
  ];
 
+ showQuoteDetails ( index : any) {
+  this.quotes[index].showDetails = !this.quotes[index].showDetails;
+}
+
   constructor() { }
 
   ngOnInit(): void {
