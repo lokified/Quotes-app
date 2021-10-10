@@ -27,6 +27,10 @@ export class QuoteComponent implements OnInit {
     
   }
 
+/*   addAQuote (quote : any) {
+    this.quotes.unshift(quote);
+  } */
+
   constructor() { }
 
   ngOnInit(): void {

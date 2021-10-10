@@ -1,0 +1,7 @@
+input {
+    border: none;
+    border-bottom: 2px solid green;
+}
+button ,label{
+    margin-top: 10px;
+}
