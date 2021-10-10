@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { Quote } from '../quote';
+import { QuoteMessage } from '../quote-message';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-quote',
@@ -10,8 +12,8 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes : Quote [] = [
-    new Quote ('Sheldon Okware','Worth the time that you ought to keep','Loki',new Date(2021,9,9)),
     new Quote('Elon Musk','The first step is to establish that something is possible; then the probability will occur','Tesla',new Date(2021,9,10)),
+    new Quote ('Sheldon Okware','Worth the time that you ought to keep','Loki',new Date(2021,9,9)),
  ];
 
  showQuoteDetails ( index : any) {
@@ -26,10 +28,17 @@ export class QuoteComponent implements OnInit {
     }
     
   }
+  quoteForm! : NgForm
+  yourName!: string;
+  yourQuote!: string;
+  authorName!: string;
+  newAddQuote : any; 
 
-/*   addAQuote (quote : any) {
+  addAQuote (quote : any) {
+    this.newAddQuote = new QuoteMessage (0,this.yourName,this.yourQuote,this.authorName, new Date());
     this.quotes.unshift(quote);
-  } */
+    this.quoteForm.reset();
+  } 
 
   constructor() { }
 

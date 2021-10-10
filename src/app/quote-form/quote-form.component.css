@@ -5,3 +5,6 @@ input {
 button ,label{
     margin-top: 10px;
 }
+textarea {
+    border: 2px solid green;
+}

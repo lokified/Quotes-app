@@ -17,6 +17,10 @@ export class TimeCounterPipe implements PipeTransform {
 
       let secondsInMin = 60;
       let minutes =  Math.floor(seconds / secondsInMin);
+
+      if (minutes == 1){
+        return 'Posted '+minutes +' minute ago';
+      }
       if (minutes >=1 && minutes < 60){
         return 'Posted '+minutes +' minutes ago';
       }

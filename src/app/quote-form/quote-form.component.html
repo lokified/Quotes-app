@@ -3,22 +3,36 @@
     <form (ngSubmit) = 'addQuote()' #quoteForm = 'ngForm' >
         <div class="form-group">
             <label for="name">Your name:</label>
-            <input type="text" id="name" name="name" class="form-control" [(ngModel)] = 'yourName' required>
+            <input type="text" id="name" name="name" class="form-control" [(ngModel)] = 'newQuote.yourName' required>
         </div>
         
         <div class="form-group">
             <label for="yourQuote">Enter your quote:</label>
-            <textarea name="yourQuote" id="yourQuote" cols="30" rows="10" class="form-control" [(ngModel)] = 'yourQuote' required></textarea>
+            <textarea name="yourQuote" id="yourQuote" cols="30" rows="2" class="form-control" [(ngModel)] = 'newQuote.yourQuote' required></textarea>
         </div>
         <div class="form-group">
             <label for="author">Enter author's name:</label>
-            <input type="text" name="author" id="author" class="form-control" [(ngModel)] = 'authorName' required>
+            <input type="text" name="author" id="author" class="form-control" [(ngModel)] = 'newQuote.authorName' required>
         </div>
         <button type="submit" class="btn btn-success">Add a Quote</button>
     </form>
-    <div>
-        <p>{{yourName}}</p>
-        <p> {{yourQuote}} </p>
-        <p> {{authorName}} </p>
+    <div class="bg-secondary text-white p-5 mt-5">
+        <p>Name: {{newQuote.yourName}}</p>
+        <p> Quote: {{newQuote.yourQuote}} </p>
+        <p> Author's Name:{{newQuote.authorName}} </p>
     </div>
+<!--     <div *ngFor = 'let quote of newQuote'  class="card mt-5">
+        <div class="card-header">
+            <h3> {{quote.yourName}} </h3>
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>{{quote.yourQuote}}</p>
+               
+            </blockquote>
+            <div class="card-footer">
+                {{quote.authorName}}
+            </div> 
+        </div>
+    </div> -->
 </div>
