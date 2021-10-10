@@ -10,8 +10,8 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes : Quote [] = [
-    new Quote ('Sheldon Okware','Worth the time that you ought to keep','Loki'),
-    new Quote('Elon Musk','The first step is to establish that something is possible; then the probability will occur','Tesla'),
+    new Quote ('Sheldon Okware','Worth the time that you ought to keep','Loki',new Date(2021,9,9)),
+    new Quote('Elon Musk','The first step is to establish that something is possible; then the probability will occur','Tesla',new Date(2021,9,10)),
  ];
 
  showQuoteDetails ( index : any) {

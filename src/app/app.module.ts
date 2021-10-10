@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { TimeCounterPipe } from './time-counter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    QuoteDetailsComponent
+    QuoteDetailsComponent,
+    TimeCounterPipe
   ],
   imports: [
     BrowserModule,

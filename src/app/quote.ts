@@ -3,8 +3,9 @@ export class Quote {
     constructor (
         public  yourName : string,
         public  yourQuote : string,
-        public  authorName : string
+        public  authorName : string,
+        public  datePosted : Date
     ) {
-         this.showDetails = false;
+        this.showDetails = false;
     }
 }
