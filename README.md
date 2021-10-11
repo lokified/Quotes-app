@@ -1,27 +1,20 @@
-# Quotes
+# Quote App
+#### This is a an application that allows you to post a quote.
+#### By **Sheldon Okware**
+## Description
+ The quote app enables you to add your favourite quote and you can also vote on it. Whether you like it or not. You can also delete the quote and there is a time elapsed shown from the time you posted  your quote.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+## Setup/Installation Requirements
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Known Bugs
+After submiting a quote,the form does not reset itself to initial state.
+## Technologies Used
+* Typescript
+* HTML
+* CSS
+## Support and contact details
+Email: lsheldon645@gmail.com
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### License
+* MIT
+Copyright (c) 2021 Sheldon Okware
