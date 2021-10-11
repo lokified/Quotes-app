@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TimeCounterPipe } from './time-counter.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     QuoteComponent,
     QuoteDetailsComponent,
     TimeCounterPipe,
-    QuoteFormComponent
+    QuoteFormComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

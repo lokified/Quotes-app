@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faTrashAlt,faQuoteLeft} from '@fortawesome/free-solid-svg-icons';
 import { Quote } from '../quote';
 import { QuoteMessage } from '../quote-message';
-import { NgForm } from '@angular/forms';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-quote',

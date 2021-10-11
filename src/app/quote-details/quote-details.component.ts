@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { Quote } from '../quote';
 import {  faThumbsDown, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -13,10 +13,10 @@ export class QuoteDetailsComponent implements OnInit {
 
   faDown = faThumbsDown;
   faUp = faThumbsUp;
-  
+
   up = 0;
   upVote () {
-    this.up++;
+    this.up++;  
   }
 
   down =0;
