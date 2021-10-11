@@ -27,14 +27,20 @@ export class TimeCounterPipe implements PipeTransform {
 
       let secondsInHours = 3600;
       let hours = Math.floor(seconds / secondsInHours);
-      if (hours >=1 && hours < 25){
+      if (hours ===1){
+        return 'Posted '+hours +' hour ago';
+      }
+      if (hours >1 && hours < 25){
         return 'Posted '+hours +' hours ago';
       }
 
       let secondsInDays = 86400;
       let day = Math.floor(seconds / secondsInDays);
-      if (day >=1){
+      if (day ===1){
         return 'Posted '+day +' day ago';
+      }
+      if (day >1){
+        return 'Posted '+day +' days ago';
       }
     }
     else {
