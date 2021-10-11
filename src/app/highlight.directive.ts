@@ -9,7 +9,7 @@ export class HighlightDirective {
   constructor(private  elem : ElementRef) { }
    
   @HostListener ('click') onClicks() {
-    this.cardHighlight('yellow');
+    this.cardHighlight('green');
   }
 
   public cardHighlight (action : string) {

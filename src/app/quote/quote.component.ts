@@ -39,7 +39,7 @@ export class QuoteComponent implements OnInit {
   newAddQuote : any; 
 
   addAQuote (quote : any) {
-    this.newAddQuote = new QuoteMessage (0,this.yourName,this.yourQuote,this.authorName, new Date());
+    this.newAddQuote = new QuoteMessage (0,this.yourName,this.yourQuote,this.authorName, new Date(Date.now()));
     this.quotes.unshift(quote);
   } 
 

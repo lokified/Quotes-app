@@ -12,3 +12,10 @@
     color:  gray;
     opacity: .4;
 }
+.quote {
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+}
+.intro {
+    color: slategrey;
+}

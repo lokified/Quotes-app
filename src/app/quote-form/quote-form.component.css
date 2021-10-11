@@ -1,10 +1,20 @@
 input {
     border: none;
-    border-bottom: 2px solid green;
+    border-bottom: 2px solid lightblue;
 }
 button ,label{
     margin-top: 10px;
 }
 textarea {
-    border: 2px solid green;
+    border: 2px solid lightblue;
+}
+.quote-form {
+    border: 2px solid lightblue;
+    padding: 1px;
+    margin-top: 10px;
+    background: lightblue;
+    color: green;
+    border-radius: 5px;
+}
+.binds{
 }

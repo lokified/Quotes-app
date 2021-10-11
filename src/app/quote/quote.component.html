@@ -1,6 +1,8 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 " >
+        <div class="col-md-6 intro" >
+            <p>What is a <em>Quote</em> ? A Quote is something written or said by another person.</p>
+            <p>Do you have that quote that inspires you, Add the quote below to also inspire others.</p>
             <app-quote-form (addQuotes) = 'addAQuote($event)' ></app-quote-form>
         </div>
         <div class="col-md-6">
@@ -10,7 +12,7 @@
                 </div>
                 <div class="card-body">
                     <blockquote class="blockquote mb-0">
-                        <p> <fa-icon [icon] = 'quotel' id="quote"></fa-icon> <br> {{quote.yourQuote}}</p>
+                        <p class="quote"> <fa-icon [icon] = 'quotel' id="quote"></fa-icon> <br> {{quote.yourQuote}}</p>
                         <button (click) = 'showQuoteDetails(i)' class="btn btn-success btn-sm"> {{quote.showDetails ? 'Hide' : 'Show'}} details</button>
                         <div *ngIf = 'quote.showDetails'>
                             <app-quote-details [quote] = 'quote' ></app-quote-details>
