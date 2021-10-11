@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt,faQuoteLeft} from '@fortawesome/free-solid-svg-icons';
 import { Quote } from '../quote';
 import { QuoteMessage } from '../quote-message';
 import { NgForm } from '@angular/forms';
@@ -20,15 +20,19 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
   }
 
+  quotel = faQuoteLeft;
   faDelete = faTrashAlt;
   deleteQuote (confirmIt: any, index : any) : any{
     if(confirmIt){
-      confirm('Are you sure you want to delete this quote?');
-      this.quotes.splice(index,1);
+      let toConfirm = confirm('Are you sure you want to delete this quote?');
+      if(toConfirm) {
+        this.quotes.splice(index,1);
+      }
+      
     }
     
   }
-  quoteForm! : NgForm
+  
   yourName!: string;
   yourQuote!: string;
   authorName!: string;
@@ -37,7 +41,6 @@ export class QuoteComponent implements OnInit {
   addAQuote (quote : any) {
     this.newAddQuote = new QuoteMessage (0,this.yourName,this.yourQuote,this.authorName, new Date());
     this.quotes.unshift(quote);
-    this.quoteForm.reset();
   } 
 
   constructor() { }
